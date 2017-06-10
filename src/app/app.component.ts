@@ -12,7 +12,8 @@ export class AppComponent {
 
   setInput() {
     if (this.inputItem) {
-      this.todos.push(this.inputItem);
+      // this.todos.push(this.inputItem);
+      this.todos = [...this.todos, this.inputItem];
       this.inputItem = '';
     }
   }
